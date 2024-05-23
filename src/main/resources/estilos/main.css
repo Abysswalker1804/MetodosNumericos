@@ -1,0 +1,9 @@
+.root{
+   -fx-background-color: linear-gradient(#9FFCEC, #02B092);
+}
+
+#resultado{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: #F4FF00;
+}

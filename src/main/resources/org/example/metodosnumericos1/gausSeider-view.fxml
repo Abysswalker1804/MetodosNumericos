@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.metodosnumericos1.GausSeiderontrolleer"
+            prefHeight="400.0" prefWidth="600.0" fx:id="scene1">
+
+
+    <top>
+        <VBox alignment="CENTER" spacing="40" style="-fx-min-height: 150">
+        <Label text="Método de Gauss-Seidel" style="-fx-font-size: 40; -fx-text-fill: blue; -fx-font-family: 'Arial Black'"/>
+
+            <HBox alignment="CENTER" spacing="40">
+                <Label text="Ingrese el numero de ecuaciones" style="-fx-font-size: 20; -fx-font-family: 'Arial Black'"/>
+                <TextField fx:id="numeVariables"></TextField>
+                <Button fx:id="btnStart" text="Aceptar" onAction="#m_inicCampos" style="-fx-font-family: 'Arial Black'"/>
+            </HBox>
+        </VBox>
+    </top>
+
+
+    <right>
+        <VBox alignment="TOP_CENTER" visible="false" fx:id="vboxRight" spacing="20">
+         <Label text="Ingrese el error permitido" style="-fx-font-family: 'Arial Black'"/>
+        <TextField fx:id="txtError"></TextField>
+    <Button  text="Realizar aproximacion" fx:id="btnGaussSeider" onAction="#StartGauss" style="-fx-font-family: 'Arial Black'"/>
+        </VBox>
+    </right>
+
+
+
+</BorderPane>
